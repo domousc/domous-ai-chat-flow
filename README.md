@@ -1,73 +1,125 @@
-# Welcome to your Lovable project
+# Domous CRM - Landing Page
 
-## Project info
+Uma landing page moderna e persuasiva para o Domous CRM, o sistema de CRM com Inteligência Artificial integrada ao WhatsApp.
 
-**URL**: https://lovable.dev/projects/560663da-67b0-4a63-b5af-2f44667b0af2
+## 🎯 Objetivo
 
-## How can I edit this code?
+Vender o CRM Domous através de uma página de conversão otimizada que:
+- Quebra barreiras de entrada com oferta inicial atrativa
+- Induz a escolha dos planos Profissional ou Avançado
+- Demonstra valor através de prova social e benefícios claros
 
-There are several ways of editing your application.
+## 🖌 Design System
 
-**Use Lovable**
+### Paleta de Cores
+- **Principal**: #181818 (preto profundo)
+- **Secundária**: #eeeeee (cinza claro)
+- **Gradiente**: #10b52e → #7f20d9 → #b152d4
+- **Complementares**: #a231d7 e #8a00ad
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/560663da-67b0-4a63-b5af-2f44667b0af2) and start prompting.
+### Características
+- Estilo clean, tecnológico e minimalista
+- Bastante espaço em branco para respiração visual
+- Botões e CTAs com gradiente Domous
+- Ícones flat e modernos
+- Tipografia Inter sem serifa para fácil leitura
+- Gradiente roxo/azul em títulos, CTAs e divisórias
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📑 Estrutura da Página
 
-**Use your preferred IDE**
+1. **Hero Section** - Proposta de valor principal com dashboard 3D interativo
+2. **Problem Section** - Dores do público-alvo
+3. **Solution Section** - Sobre o produto e funcionalidades principais
+4. **Features Section** - Funcionalidades detalhadas em cards
+5. **Benefits Section** - Benefícios e transformação com métricas
+6. **Social Proof Section** - Depoimentos e estatísticas
+7. **Pricing Section** - Planos com ancoragem psicológica
+8. **Final CTA Section** - Chamada final para ação
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Funcionalidades Implementadas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Design
+- ✅ Sistema de design completo com tokens semânticos
+- ✅ Gradientes personalizados do Domous
+- ✅ Animações e transições suaves
+- ✅ Efeito 3D no dashboard com hover interativo
+- ✅ Responsive design para todos os dispositivos
 
-Follow these steps:
+### Componentes
+- ✅ Header com navegação smooth scroll
+- ✅ Hero com dashboard animado
+- ✅ Seções de problema, solução e benefícios
+- ✅ Cards de funcionalidades com ícones
+- ✅ Prova social com depoimentos
+- ✅ Tabela de preços com ancoragem psicológica
+- ✅ CTA final com oferta limitada
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### SEO & Performance
+- ✅ Meta tags otimizadas
+- ✅ Estrutura semântica HTML5
+- ✅ Open Graph para redes sociais
+- ✅ Imagens otimizadas com alt text
+- ✅ Lazy loading implementado
+- ✅ Google Fonts carregadas de forma otimizada
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 💰 Estratégia de Preços
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Ancoragem Psicológica
+- Comparação com concorrentes (R$ 500-800/mês)
+- Oferta de primeiro mês por R$ 97
+- Bonificação de setup gratuito
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Planos
+1. **Essencial** - R$ 197/mês (entrada)
+2. **Profissional** - R$ 297/mês (mais popular)
+3. **Avançado** - R$ 497/mês (premium)
+4. **Enterprise** - Sob consulta (enterprise)
+
+## 🛠 Tecnologias Utilizadas
+
+- **React** + **TypeScript**
+- **Tailwind CSS** com design system customizado
+- **Vite** para build otimizada
+- **Lucide React** para ícones
+- **shadcn/ui** como base de componentes
+- **Inter Font** para tipografia moderna
+
+## 📱 Responsividade
+
+- Desktop (1200px+)
+- Tablet (768px - 1199px)  
+- Mobile (até 767px)
+
+## 🎨 Animações
+
+- Fade in up para entrada de elementos
+- Float para elementos flutuantes
+- Hover effects em cards e botões
+- Dashboard 3D com efeito parallax
+- Smooth scrolling entre seções
+
+## 🔧 Como Rodar
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
 npm run dev
+
+# Build para produção
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 📈 Métricas de Conversão
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+A página foi otimizada para maximizar conversões através de:
+- Proposta de valor clara no hero
+- Prova social estrategicamente posicionada
+- Ancoragem de preços efetiva
+- Múltiplos CTAs ao longo da página
+- Senso de urgência na oferta limitada
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/560663da-67b0-4a63-b5af-2f44667b0af2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Desenvolvido para Domous CRM** - Transformando conversas em clientes com IA integrada ao WhatsApp.

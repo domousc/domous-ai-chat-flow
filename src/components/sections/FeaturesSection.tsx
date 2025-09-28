@@ -1,0 +1,121 @@
+import { MessageCircle, Bot, Send, Kanban, BarChart3, Users, Globe } from "lucide-react";
+
+const featuresDetails = [
+  {
+    icon: MessageCircle,
+    title: "Chat unificado",
+    description: "Centralize todas as conversas do WhatsApp em uma única interface intuitiva",
+    features: ["Multi-WhatsApp", "Histórico completo", "Busca avançada", "Tags personalizadas"]
+  },
+  {
+    icon: Bot,
+    title: "Automação completa (IA, follow-up, lembretes)",
+    description: "Inteligência artificial que trabalha 24/7 qualificando e nutrindo seus leads",
+    features: ["IA conversacional", "Follow-up automático", "Lembretes inteligentes", "Qualificação de leads"]
+  },
+  {
+    icon: Send,
+    title: "Disparos em massa e campanhas",
+    description: "Envie mensagens segmentadas e crie campanhas personalizadas facilmente",
+    features: ["Listas segmentadas", "Agendamento", "Templates personalizados", "Métricas de engajamento"]
+  },
+  {
+    icon: Kanban,
+    title: "Funil + Kanban",
+    description: "Visualize e gerencie todo seu pipeline de vendas de forma visual e intuitiva",
+    features: ["Arrastar e soltar", "Etapas customizáveis", "Tempo por etapa", "Probabilidades"]
+  },
+  {
+    icon: BarChart3,
+    title: "Relatórios e métricas",
+    description: "Dashboards completos com todas as métricas que você precisa para crescer",
+    features: ["ROI por campanha", "Funil de conversão", "Performance da equipe", "Relatórios customizados"]
+  },
+  {
+    icon: Users,
+    title: "Multiusuário e filas",
+    description: "Gerencie sua equipe e distribua atendimentos de forma inteligente",
+    features: ["Perfis de acesso", "Filas automáticas", "Transferência de chats", "Controle de presença"]
+  },
+  {
+    icon: Globe,
+    title: "Suporte em português",
+    description: "Atendimento e documentação 100% em português, feito no Brasil para brasileiros",
+    features: ["Suporte via WhatsApp", "Onboarding gratuito", "Treinamentos", "Comunidade ativa"]
+  }
+];
+
+const FeaturesSection = () => {
+  return (
+    <section className="py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+            Funcionalidades que fazem a <span className="text-domous-gradient">diferença</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Cada recurso foi pensado para resolver problemas reais de empresas que vendem pelo WhatsApp
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          {featuresDetails.map((feature, index) => {
+            const IconComponent = feature.icon;
+            return (
+              <div
+                key={index}
+                className="card-domous group hover:shadow-xl"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-16 h-16 mb-6 bg-gradient-domous rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <IconComponent className="h-8 w-8 text-white" />
+                </div>
+                
+                <h3 className="text-2xl font-semibold text-domous-dark mb-4">
+                  {feature.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {feature.description}
+                </p>
+
+                <ul className="space-y-3">
+                  {feature.features.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-center text-sm">
+                      <div className="w-2 h-2 bg-domous-accent-1 rounded-full mr-3 flex-shrink-0" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="text-center mt-16">
+          <div className="bg-white rounded-3xl p-8 shadow-card-domous max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-domous-dark mb-4">
+              Tudo isso em uma única plataforma
+            </h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              Pare de usar 5 ferramentas diferentes. O Domous centraliza tudo que você precisa 
+              para vender pelo WhatsApp com inteligência artificial.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              {["CRM", "WhatsApp", "IA", "Automação", "Relatórios", "Campanhas"].map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-gradient-domous text-white rounded-full text-sm font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FeaturesSection;

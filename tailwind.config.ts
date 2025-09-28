@@ -14,6 +14,18 @@ export default {
     },
     extend: {
       colors: {
+        /* Domous Brand Colors */
+        domous: {
+          dark: "hsl(var(--domous-dark))",
+          light: "hsl(var(--domous-light))",
+          green: "hsl(var(--domous-green))",
+          purple: "hsl(var(--domous-purple))",
+          "purple-light": "hsl(var(--domous-purple-light))",
+          "accent-1": "hsl(var(--domous-accent-1))",
+          "accent-2": "hsl(var(--domous-accent-2))",
+        },
+
+        /* Base Theme Colors */
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,6 +69,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-domous": "var(--gradient-domous)",
+        "gradient-domous-reverse": "var(--gradient-domous-reverse)",
+        "gradient-subtle": "var(--gradient-subtle)",
+        "gradient-dark": "var(--gradient-dark)",
+      },
+      boxShadow: {
+        "domous": "var(--shadow-domous)",
+        "glow": "var(--shadow-glow)",
+        "card-domous": "var(--shadow-card)",
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
