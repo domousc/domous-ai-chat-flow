@@ -67,11 +67,11 @@ const FinalCTASection = () => {
               </div>
               
               <h3 className="text-2xl font-bold mb-4">
-                Primeiro mês por apenas R$ 97 + Setup gratuito
+                Primeiro mês por apenas R$ 97
               </h3>
               
               <p className="text-gray-300 mb-6">
-                Valor total da oferta: <span className="line-through">R$ 800</span> → <strong className="text-green-400">R$ 97</strong>
+                Comece hoje com investimento mínimo: <strong className="text-green-400">R$ 97</strong>
               </p>
               
               <div className="text-sm text-gray-400">
@@ -110,13 +110,18 @@ const FinalCTASection = () => {
           {/* Trust Elements */}
           <div className="mt-16 pt-8 border-t border-white/20">
             <p className="text-gray-400 text-sm mb-4">
-              Junte-se a mais de 2.800 empresas que já transformaram seus resultados
+              Transforme seu atendimento no WhatsApp hoje mesmo
             </p>
-            <div className="flex justify-center items-center space-x-8 opacity-60">
-              <div className="text-xs">🔒 SSL Seguro</div>
-              <div className="text-xs">✅ LGPD Compliance</div>
-              <div className="text-xs">🇧🇷 Feito no Brasil</div>
-              <div className="text-xs">⭐ 4.9/5 avaliação</div>
+            <div className="flex justify-center items-center space-x-8 opacity-60 text-xs">
+              <div>🔒 SSL Seguro</div>
+              <div>✅ LGPD Compliance</div>
+              <div>🇧🇷 Feito no Brasil</div>
+              <div>⭐ 4.9/5 avaliação</div>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-xs text-gray-500">
+                © 2024 Domous - Todos os direitos reservados
+              </p>
             </div>
           </div>
         </div>

@@ -112,7 +112,7 @@ const PaymentSection = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="text-sm text-muted-foreground mb-2">Processamento</div>
-                  <div className="font-semibold text-domous-dark">Stripe & Mercado Pago</div>
+                  <div className="font-semibold text-domous-dark">Asaas</div>
                 </div>
                 <div className="text-center">
                   <div className="text-sm text-muted-foreground mb-2">Certificação</div>
@@ -126,20 +126,6 @@ const PaymentSection = () => {
             </div>
           </div>
 
-          {/* FAQ Payment */}
-          <div className="mt-12 text-center">
-            <div className="bg-gradient-domous rounded-3xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">
-                Dúvidas sobre pagamento?
-              </h3>
-              <p className="mb-6 opacity-90">
-                Nossa equipe financeira está disponível para esclarecer qualquer questão sobre faturamento e pagamentos.
-              </p>
-              <button className="bg-white text-domous-purple font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition-colors">
-                Falar com Financeiro
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

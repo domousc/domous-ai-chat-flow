@@ -79,8 +79,19 @@ const FeaturesSection = () => {
                 className="card-domous group hover:shadow-xl"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 mb-6 bg-gradient-domous rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <IconComponent className="h-8 w-8 text-white" />
+                <div className="w-16 h-16 mb-6 border-2 border-gradient-domous rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform bg-gradient-to-r from-domous-blue via-domous-purple to-domous-pink p-[2px]">
+                  <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
+                    <IconComponent className="h-8 w-8" style={{stroke: 'url(#gradient)'}} />
+                  </div>
+                  <svg width="0" height="0">
+                    <defs>
+                      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="hsl(var(--domous-blue))" />
+                        <stop offset="50%" stopColor="hsl(var(--domous-purple))" />
+                        <stop offset="100%" stopColor="hsl(var(--domous-pink))" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </div>
                 
                 <h3 className="text-2xl font-semibold text-domous-dark mb-4">

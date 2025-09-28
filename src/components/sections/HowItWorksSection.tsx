@@ -89,16 +89,16 @@ const HowItWorksSection = () => {
               Pronto para começar?
             </h3>
             <p className="text-lg text-muted-foreground mb-6">
-              Todo o processo leva menos de 15 minutos e nossa equipe te ajuda no setup inicial.
+              Todo o processo leva menos de 15 minutos. Nossa equipe oferece suporte via WhatsApp sempre que precisar.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />
-                Setup gratuito
+                Conta ativa rapidamente
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />
-                Treinamento incluso
+                Treinamento disponível (R$ 947)
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2" />

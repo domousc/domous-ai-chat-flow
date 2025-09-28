@@ -170,9 +170,11 @@ const ComparisonSection = () => {
               {["Melhor Preço", "IA Inclusa", "Suporte BR", "Sem Fidelidade"].map((benefit, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 bg-gradient-domous text-white rounded-full text-sm font-semibold"
+                  className="px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-domous-blue via-domous-purple to-domous-pink p-[2px]"
                 >
-                  {benefit}
+                  <span className="block px-3 py-1 bg-white rounded-full text-domous-purple font-semibold">
+                    {benefit}
+                  </span>
                 </span>
               ))}
             </div>

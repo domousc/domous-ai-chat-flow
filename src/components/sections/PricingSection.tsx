@@ -14,7 +14,7 @@ const plans = [
       "Todas as funcionalidades completas",
       "IA integrada",
       "Suporte via WhatsApp",
-      "Setup gratuito"
+      "Conta ativa em minutos"
     ],
     cta: "Começar com o Essencial",
     icon: MessageCircle
@@ -32,7 +32,7 @@ const plans = [
       "IA integrada avançada",
       "Relatórios detalhados e segmentados",
       "Suporte prioritário",
-      "Setup gratuito"
+      "Conta ativa em minutos"
     ],
     cta: "Quero o Profissional",
     bonus: "Por apenas R$ 100 a mais que o Essencial, você triplica usuários e conexões",
@@ -90,13 +90,13 @@ const PricingSection = () => {
             <span>Oferta especial para novos clientes</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-domous-dark mb-6">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-domous-dark mb-6">
             Outros CRMs com IA custam de <span className="text-red-500">R$ 500 a R$ 800/mês</span>.<br />
             Na Domous você tem <span className="text-domous-gradient">tudo isso</span> — a partir de R$ 197/mês.
           </h2>
           
           <p className="text-xl lg:text-2xl text-muted-foreground mb-8">
-            E para novos clientes, o <strong className="text-domous-accent-1">primeiro mês sai por apenas R$ 97</strong>, com setup gratuito incluso.
+            E para novos clientes, o <strong className="text-domous-accent-1">primeiro mês sai por apenas R$ 97</strong>, conta ativa em minutos.
           </p>
         </div>
 
@@ -195,54 +195,66 @@ const PricingSection = () => {
 
         {/* Setup & Training Add-on */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-domous rounded-3xl p-8 text-white max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">
-              🚀 Setup Completo + Treinamento Especializado
-            </h3>
-            <p className="text-lg opacity-90 mb-6">
-              Quer começar com tudo configurado e sua equipe 100% treinada? 
-              Oferecemos implementação completa para você focar apenas nos resultados.
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="text-left">
-                <h4 className="font-semibold mb-3">✅ Setup Completo Inclui:</h4>
-                <ul className="space-y-2 text-sm opacity-90">
-                  <li>• Configuração completa da IA personalizada</li>
-                  <li>• Importação e organização de contatos</li>
-                  <li>• Criação de funil de vendas customizado</li>
-                  <li>• Templates de mensagens para seu negócio</li>
-                  <li>• Integrações com suas ferramentas atuais</li>
-                </ul>
-              </div>
+          <div className="rounded-3xl p-8 max-w-4xl mx-auto bg-gradient-to-r from-domous-blue via-domous-purple to-domous-pink p-[3px]">
+            <div className="bg-white rounded-3xl p-8 text-domous-dark">
+              <h3 className="text-2xl font-bold mb-4">
+                🚀 Setup Completo + Treinamento Especializado
+              </h3>
+              <p className="text-lg mb-6">
+                Quer começar com tudo configurado e sua equipe 100% treinada? 
+                Oferecemos implementação completa para você focar apenas nos resultados.
+              </p>
               
-              <div className="text-left">
-                <h4 className="font-semibold mb-3">🎓 Treinamento Inclui:</h4>
-                <ul className="space-y-2 text-sm opacity-90">
-                  <li>• Treinamento ao vivo para toda equipe</li>
-                  <li>• Manual personalizado do seu negócio</li>
-                  <li>• Sessões de dúvidas por 30 dias</li>
-                  <li>• Estratégias de conversão específicas</li>
-                  <li>• Acompanhamento de resultados</li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="text-left">
+                  <h4 className="font-semibold mb-3">✅ Setup Completo Inclui:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Configuração completa da IA personalizada</li>
+                    <li>• Importação e organização de contatos</li>
+                    <li>• Criação de funil de vendas customizado</li>
+                    <li>• Templates de mensagens para seu negócio</li>
+                    <li>• Integrações com suas ferramentas atuais</li>
+                  </ul>
+                </div>
+                
+                <div className="text-left">
+                  <h4 className="font-semibold mb-3">🎓 Treinamento Inclui:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Treinamento ao vivo para toda equipe (call de 1h)</li>
+                    <li>• Manual personalizado do seu negócio</li>
+                    <li>• Sessões de dúvidas por 30 dias</li>
+                    <li>• Estratégias de conversão específicas</li>
+                    <li>• Acompanhamento de resultados</li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            <div className="border-t border-white/20 pt-6">
-              <p className="text-2xl font-bold mb-2">
-                Investimento único: R$ 947
-              </p>
-              <p className="text-sm opacity-80 mb-6">
-                (Parcelável em até 3x no cartão)
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-domous-purple font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition-colors">
-                  Quero Setup + Treinamento
-                </button>
-                <button className="border border-white/30 text-white font-semibold px-8 py-3 rounded-xl hover:bg-white/10 transition-colors">
-                  Falar com especialista
-                </button>
+              <div className="border-t border-gray-200 pt-6">
+                <p className="text-2xl font-bold mb-2">
+                  Investimento único: R$ 947
+                </p>
+                <p className="text-sm mb-6">
+                  (Parcelável em até 3x no cartão)
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="https://wa.me/5583981195186?text=Olá! Gostaria de contratar o Setup Completo + Treinamento Especializado do Domous CRM por R$947." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-domous-purple text-white font-semibold px-8 py-3 rounded-xl hover:bg-domous-purple/90 transition-colors"
+                  >
+                    Quero Setup + Treinamento
+                  </a>
+                  <a 
+                    href="https://wa.me/5583981195186?text=Olá! Gostaria de falar com um especialista sobre o Setup Completo + Treinamento do Domous CRM." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="border border-domous-purple text-domous-purple font-semibold px-8 py-3 rounded-xl hover:bg-domous-purple hover:text-white transition-colors"
+                  >
+                    Falar com especialista
+                  </a>
+                </div>
               </div>
             </div>
           </div>

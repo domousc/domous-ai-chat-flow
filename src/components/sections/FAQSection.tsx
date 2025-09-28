@@ -108,17 +108,24 @@ const FAQSection = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Nossa equipe está pronta para esclarecer qualquer questão e te ajudar a escolher o melhor plano.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-domous">
-                Falar no WhatsApp
-              </button>
-              <button 
-                className="px-8 py-4 bg-white text-domous-purple font-semibold rounded-xl border-2 border-domous-purple hover:bg-domous-purple hover:text-white transition-colors"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Ver Demonstração
-              </button>
-            </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="https://wa.me/5583981195186?text=Olá! Gostaria de falar no WhatsApp sobre o Domous CRM." 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-domous"
+                >
+                  Falar no WhatsApp
+                </a>
+                <a 
+                  href="https://wa.me/5583981195186?text=Olá! Gostaria de ver uma demonstração do Domous CRM." 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-white text-domous-purple font-semibold rounded-xl border-2 border-domous-purple hover:bg-domous-purple hover:text-white transition-colors"
+                >
+                  Ver Demonstração
+                </a>
+              </div>
           </div>
         </div>
       </div>
