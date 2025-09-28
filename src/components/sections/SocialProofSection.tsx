@@ -59,34 +59,22 @@ const SocialProofSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         {/* Stats */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
-            Resultados que <span className="text-domous-gradient">comprovam</span> a eficácia
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Milhares de empresas já transformaram suas vendas com o Domous CRM
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {stats.map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <div
-                  key={index}
-                  className="card-domous text-center group hover:scale-105"
-                >
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-domous rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
-                    <IconComponent className="h-8 w-8 text-white" />
-                  </div>
-                  <div className="text-3xl lg:text-4xl font-bold text-domous-dark mb-2">
-                    {stat.value}<span className="text-domous-accent-1">{stat.suffix}</span>
-                  </div>
-                  <div className="text-muted-foreground font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              );
-            })}
+        <div className="text-center mb-12">
+          <div className="flex items-center justify-center space-x-8 mb-6">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-domous-gradient mb-2">47%</div>
+              <div className="text-muted-foreground">aumento médio em conversões</div>
+            </div>
+            <div className="w-px h-16 bg-border" />
+            <div className="text-center">
+              <div className="text-4xl font-bold text-domous-gradient mb-2">24/7</div>
+              <div className="text-muted-foreground">atendimento automatizado</div>
+            </div>
+            <div className="w-px h-16 bg-border" />
+            <div className="text-center">
+              <div className="text-4xl font-bold text-domous-gradient mb-2">85%</div>
+              <div className="text-muted-foreground">satisfação dos clientes</div>
+            </div>
           </div>
         </div>
 

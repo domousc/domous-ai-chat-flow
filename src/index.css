@@ -11,7 +11,7 @@ All colors MUST be HSL.
     /* Domous Brand Colors */
     --domous-dark: 0 0% 9%;           /* #181818 - preto profundo */
     --domous-light: 0 0% 93%;         /* #eeeeee - cinza claro */
-    --domous-green: 135 84% 39%;      /* #10b52e - verde */
+    --domous-green: 194 84% 47%;      /* #10b5e2 - azul/ciano */
     --domous-purple: 266 74% 49%;     /* #7f20d9 - roxo */
     --domous-purple-light: 284 62% 58%; /* #b152d4 - roxo claro */
     --domous-accent-1: 276 73% 52%;   /* #a231d7 - complementar 1 */
@@ -136,7 +136,7 @@ All colors MUST be HSL.
 @layer components {
   /* CTA Button with Domous Gradient */
   .btn-domous {
-    @apply bg-gradient-to-r from-[hsl(var(--domous-green))] via-[hsl(var(--domous-purple))] to-[hsl(var(--domous-purple-light))] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 hover:shadow-[0_20px_60px_-10px_hsl(var(--domous-purple)/0.4)];
+    @apply bg-gradient-to-r from-[hsl(var(--domous-purple))] to-[hsl(var(--domous-accent-2))] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-500 hover:shadow-lg hover:scale-105 hover:shadow-[0_20px_60px_-10px_hsl(var(--domous-purple)/0.4)] hover:bg-gradient-to-r hover:from-[hsl(var(--domous-green))] hover:via-[hsl(var(--domous-purple))] hover:to-[hsl(var(--domous-purple-light))];
   }
 
   /* Section Background Gradients */

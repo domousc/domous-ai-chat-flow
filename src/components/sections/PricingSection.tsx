@@ -40,7 +40,7 @@ const plans = [
   },
   {
     name: "Avançado",
-    price: "497",
+    price: "369",
     originalPrice: null,
     description: "Para equipes comerciais que precisam de performance máxima",
     popular: false,
@@ -193,20 +193,58 @@ const PricingSection = () => {
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center">
-          <div className="bg-white rounded-3xl p-8 shadow-card-domous max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-domous-dark mb-4">
-              Ainda tem dúvidas sobre qual plano escolher?
+        {/* Setup & Training Add-on */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-domous rounded-3xl p-8 text-white max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4">
+              🚀 Setup Completo + Treinamento Especializado
             </h3>
-            <p className="text-lg text-muted-foreground mb-6">
-              Nossa equipe te ajuda a encontrar o plano ideal para seu negócio. 
-              Agende uma demonstração gratuita e veja o Domous funcionando na prática.
+            <p className="text-lg opacity-90 mb-6">
+              Quer começar com tudo configurado e sua equipe 100% treinada? 
+              Oferecemos implementação completa para você focar apenas nos resultados.
             </p>
-            <Button size="lg" className="btn-domous">
-              <Headphones className="mr-2 h-5 w-5" />
-              Falar com especialista
-            </Button>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="text-left">
+                <h4 className="font-semibold mb-3">✅ Setup Completo Inclui:</h4>
+                <ul className="space-y-2 text-sm opacity-90">
+                  <li>• Configuração completa da IA personalizada</li>
+                  <li>• Importação e organização de contatos</li>
+                  <li>• Criação de funil de vendas customizado</li>
+                  <li>• Templates de mensagens para seu negócio</li>
+                  <li>• Integrações com suas ferramentas atuais</li>
+                </ul>
+              </div>
+              
+              <div className="text-left">
+                <h4 className="font-semibold mb-3">🎓 Treinamento Inclui:</h4>
+                <ul className="space-y-2 text-sm opacity-90">
+                  <li>• Treinamento ao vivo para toda equipe</li>
+                  <li>• Manual personalizado do seu negócio</li>
+                  <li>• Sessões de dúvidas por 30 dias</li>
+                  <li>• Estratégias de conversão específicas</li>
+                  <li>• Acompanhamento de resultados</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="border-t border-white/20 pt-6">
+              <p className="text-2xl font-bold mb-2">
+                Investimento único: R$ 947
+              </p>
+              <p className="text-sm opacity-80 mb-6">
+                (Parcelável em até 3x no cartão)
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-white text-domous-purple font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition-colors">
+                  Quero Setup + Treinamento
+                </button>
+                <button className="border border-white/30 text-white font-semibold px-8 py-3 rounded-xl hover:bg-white/10 transition-colors">
+                  Falar com especialista
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

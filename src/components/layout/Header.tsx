@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import domousLogo from "@/assets/domous-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,13 +18,7 @@ const Header = () => {
           
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-domous rounded-xl flex items-center justify-center">
-              <MessageCircle className="h-6 w-6 text-white" />
-            </div>
-            <div className="text-2xl font-bold text-domous-dark">
-              <span className="text-domous-gradient">DOMOUS</span>
-              <span className="text-xs ml-2 bg-domous-accent-1 text-white px-2 py-1 rounded-full">CRM</span>
-            </div>
+            <img src={domousLogo} alt="Domous CRM" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

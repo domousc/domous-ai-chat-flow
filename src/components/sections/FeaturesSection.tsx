@@ -1,4 +1,4 @@
-import { MessageCircle, Bot, Send, Kanban, BarChart3, Users, Globe } from "lucide-react";
+import { MessageCircle, Bot, Send, Kanban, BarChart3, Users, Globe, Zap, Tag, Clock } from "lucide-react";
 
 const featuresDetails = [
   {
@@ -38,10 +38,22 @@ const featuresDetails = [
     features: ["Perfis de acesso", "Filas automáticas", "Transferência de chats", "Controle de presença"]
   },
   {
-    icon: Globe,
-    title: "Suporte em português",
-    description: "Atendimento e documentação 100% em português, feito no Brasil para brasileiros",
-    features: ["Suporte via WhatsApp", "Onboarding gratuito", "Treinamentos", "Comunidade ativa"]
+    icon: Zap,
+    title: "Integrações via API",
+    description: "Conecte o Domous com suas ferramentas favoritas e sistemas existentes",
+    features: ["APIs REST", "Webhooks", "Zapier", "Integrações personalizadas"]
+  },
+  {
+    icon: Tag,
+    title: "Etiquetas e segmentação de contatos",
+    description: "Organize e segmente seus contatos de forma inteligente para campanhas direcionadas",
+    features: ["Tags automáticas", "Segmentação avançada", "Filtros personalizados", "Grupos dinâmicos"]
+  },
+  {
+    icon: Clock,
+    title: "Mensagens agendadas e rápidas",
+    description: "Programe envios e tenha respostas prontas para agilizar o atendimento",
+    features: ["Agendamento inteligente", "Respostas rápidas", "Templates salvos", "Automação por horário"]
   }
 ];
 
@@ -58,7 +70,7 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuresDetails.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
