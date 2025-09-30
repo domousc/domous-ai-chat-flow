@@ -57,20 +57,20 @@ const SocialProofSection = () => {
       <div className="container mx-auto px-6">
         {/* Stats */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center space-x-8 mb-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-6">
             <div className="text-center">
-              <div className="text-4xl font-bold text-domous-gradient mb-2">47%</div>
-              <div className="text-muted-foreground">aumento médio em conversões</div>
+              <div className="text-3xl sm:text-4xl font-bold text-domous-gradient mb-1">+47%</div>
+              <div className="text-sm sm:text-base text-muted-foreground">aumento médio em<br className="sm:hidden" /> conversões</div>
             </div>
-            <div className="w-px h-16 bg-border" />
+            <div className="hidden sm:block w-px h-16 bg-border" />
             <div className="text-center">
-              <div className="text-4xl font-bold text-domous-gradient mb-2">24/7</div>
-              <div className="text-muted-foreground">atendimento automatizado</div>
+              <div className="text-3xl sm:text-4xl font-bold text-domous-gradient mb-1">24/7</div>
+              <div className="text-sm sm:text-base text-muted-foreground">atendimento<br className="sm:hidden" /> automatizado</div>
             </div>
-            <div className="w-px h-16 bg-border" />
+            <div className="hidden sm:block w-px h-16 bg-border" />
             <div className="text-center">
-              <div className="text-4xl font-bold text-domous-gradient mb-2">85%</div>
-              <div className="text-muted-foreground">satisfação dos clientes</div>
+              <div className="text-3xl sm:text-4xl font-bold text-domous-gradient mb-1">85%</div>
+              <div className="text-sm sm:text-base text-muted-foreground">satisfação dos<br className="sm:hidden" /> clientes</div>
             </div>
           </div>
         </div>
