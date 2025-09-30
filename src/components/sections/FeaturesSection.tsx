@@ -1,4 +1,4 @@
-import { MessageCircle, Bot, Send, Kanban, FileBarChart, Users, Globe, Zap, Tag, Clock } from "lucide-react";
+import { MessageCircle, Bot, Send, LayoutGrid, FileBarChart, Users, Globe, Zap, Tag, Clock } from "lucide-react";
 
 const featuresDetails = [
   {
@@ -20,7 +20,7 @@ const featuresDetails = [
     features: ["Listas segmentadas", "Agendamento", "Templates personalizados", "Métricas de engajamento"]
   },
   {
-    icon: Kanban,
+    icon: LayoutGrid,
     title: "Funil + Kanban",
     description: "Visualize e gerencie todo seu pipeline de vendas de forma visual e intuitiva",
     features: ["Etapas customizáveis", "Probabilidades", "Visão completa", "Gestão ágil"]
