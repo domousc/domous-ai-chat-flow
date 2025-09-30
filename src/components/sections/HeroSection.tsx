@@ -19,13 +19,13 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8 fade-in-up">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 <span className="block text-domous-dark">Transforme</span>
                 <span className="block text-domous-gradient">conversas em clientes</span>
                 <span className="block text-domous-dark">com CRM + IA no WhatsApp</span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                 Automatize seu atendimento, nunca mais perca leads e aumente conversões
                 com o CRM mais inteligente do mercado.
               </p>
