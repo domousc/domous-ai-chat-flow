@@ -38,10 +38,10 @@ const BenefitsSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
             Transforme seu negócio com <span className="text-domous-gradient">resultados reais</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Veja como o Domous CRM pode revolucionar sua operação comercial e acelerar seus resultados
           </p>
         </div>

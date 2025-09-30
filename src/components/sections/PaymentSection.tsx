@@ -5,10 +5,10 @@ const PaymentSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
             Formas de <span className="text-domous-gradient">pagamento</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg text-muted-foreground">
             Escolha a forma que for mais conveniente para você
           </p>
         </div>

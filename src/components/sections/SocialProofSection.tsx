@@ -1,4 +1,5 @@
 import { Star, Quote, TrendingUp, Users, MessageCircle } from "lucide-react";
+import testimonialMarco from "@/assets/testimonial-marco.png";
 
 const testimonials = [
   {
@@ -10,12 +11,8 @@ const testimonials = [
     results: "+65% conversões"
   },
   {
-    name: "Ana Costa",
-    company: "Consultoria Empresarial",
-    role: "CEO",
-    content: "Nunca mais perdemos um lead. O sistema captura tudo automaticamente e a IA faz follow-up sem a gente precisar lembrar. Simplesmente fantástico!",
-    rating: 5,
-    results: "0 leads perdidos"
+    image: testimonialMarco,
+    isImage: true
   },
   {
     name: "Roberto Mendes",
@@ -80,7 +77,7 @@ const SocialProofSection = () => {
 
         {/* Testimonials */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center text-domous-dark mb-12">
+          <h3 className="text-2xl lg:text-3xl font-bold text-center text-domous-dark mb-12">
             O que nossos clientes estão dizendo
           </h3>
 
@@ -90,35 +87,45 @@ const SocialProofSection = () => {
                 key={index}
                 className="card-domous relative group hover:shadow-glow"
               >
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-domous rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Quote className="h-4 w-4 text-white" />
-                </div>
-
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed mb-6 italic">
-                  "{testimonial.content}"
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="font-semibold text-domous-dark">
-                      {testimonial.name}
+                {testimonial.isImage ? (
+                  <img 
+                    src={testimonial.image} 
+                    alt="Depoimento de cliente Domous CRM"
+                    className="w-full h-auto rounded-2xl"
+                  />
+                ) : (
+                  <>
+                    <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-domous rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Quote className="h-4 w-4 text-white" />
                     </div>
-                    <div className="text-sm text-muted-foreground">
-                      {testimonial.role} • {testimonial.company}
+
+                    <div className="flex items-center mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                      ))}
                     </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-sm font-bold text-domous-accent-1">
-                      {testimonial.results}
+
+                    <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                      "{testimonial.content}"
+                    </p>
+
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="font-semibold text-domous-dark">
+                          {testimonial.name}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {testimonial.role} • {testimonial.company}
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm font-bold text-domous-accent-1">
+                          {testimonial.results}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </>
+                )}
               </div>
             ))}
           </div>

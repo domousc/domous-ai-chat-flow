@@ -13,7 +13,7 @@ const FinalCTASection = () => {
           
           {/* Main Headline */}
           <div className="mb-12">
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
               Seus clientes estão no <span className="text-transparent bg-gradient-to-r from-green-400 via-purple-400 to-pink-400 bg-clip-text">WhatsApp</span>.
               <br />
               Sua empresa também deveria estar.

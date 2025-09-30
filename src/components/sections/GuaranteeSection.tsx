@@ -12,10 +12,10 @@ const GuaranteeSection = () => {
               <span>Garantia de baixo risco</span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
               Teste o Domous CRM <span className="text-domous-gradient">sem riscos</span>
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg text-muted-foreground">
               Estamos tão confiantes no resultado que oferecemos total flexibilidade
             </p>
           </div>

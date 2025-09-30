@@ -1,4 +1,4 @@
-import { Bot, MessageSquare, BarChart3, Zap, FileText, Users2, HeadphonesIcon } from "lucide-react";
+import { Bot, MessageSquare, Kanban, Zap, FileText, Users2, HeadphonesIcon } from "lucide-react";
 
 const features = [
   {
@@ -17,7 +17,7 @@ const features = [
     description: "Envie mensagens segmentadas e campanhas em massa com facilidade"
   },
   {
-    icon: BarChart3,
+    icon: Kanban,
     title: "Funil visual Kanban para acompanhar vendas",
     description: "Visualize o andamento de cada negociação em tempo real"
   },
@@ -43,11 +43,11 @@ const SolutionSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
             O CRM feito para o <span className="text-domous-gradient">WhatsApp</span>, <br />
             com Inteligência Artificial em todos os planos
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Uma solução completa que transforma a forma como você se relaciona com seus clientes, 
             automatiza processos e aumenta suas vendas.
           </p>

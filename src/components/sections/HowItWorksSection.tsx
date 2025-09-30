@@ -29,10 +29,10 @@ const HowItWorksSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
             Como funciona na <span className="text-domous-gradient">prática</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             3 passos simples para transformar seu atendimento no WhatsApp
           </p>
         </div>

@@ -1,4 +1,4 @@
-import { MessageCircle, Bot, Send, Kanban, BarChart3, Users, Globe, Zap, Tag, Clock } from "lucide-react";
+import { MessageCircle, Bot, Send, Kanban, FileBarChart, Users, Globe, Zap, Tag, Clock } from "lucide-react";
 
 const featuresDetails = [
   {
@@ -23,10 +23,10 @@ const featuresDetails = [
     icon: Kanban,
     title: "Funil + Kanban",
     description: "Visualize e gerencie todo seu pipeline de vendas de forma visual e intuitiva",
-    features: ["Arrastar e soltar", "Etapas customizáveis", "Tempo por etapa", "Probabilidades"]
+    features: ["Etapas customizáveis", "Probabilidades", "Visão completa", "Gestão ágil"]
   },
   {
-    icon: BarChart3,
+    icon: FileBarChart,
     title: "Relatórios e métricas",
     description: "Dashboards completos com todas as métricas que você precisa para crescer",
     features: ["ROI por campanha", "Funil de conversão", "Performance da equipe", "Relatórios customizados"]
@@ -41,7 +41,7 @@ const featuresDetails = [
     icon: Zap,
     title: "Integrações via API",
     description: "Conecte o Domous com suas ferramentas favoritas e sistemas existentes",
-    features: ["APIs REST", "Webhooks", "Zapier", "Integrações personalizadas"]
+    features: ["APIs REST", "Webhooks", "Integrações personalizadas", "Automações customizadas"]
   },
   {
     icon: Tag,
@@ -62,10 +62,10 @@ const FeaturesSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-domous-dark mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
             Funcionalidades que fazem a <span className="text-domous-gradient">diferença</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Cada recurso foi pensado para resolver problemas reais de empresas que vendem pelo WhatsApp
           </p>
         </div>

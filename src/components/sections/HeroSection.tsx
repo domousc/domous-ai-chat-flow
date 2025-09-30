@@ -75,7 +75,7 @@ const HeroSection = () => {
                   />
                   
                   {/* Floating Elements */}
-                  <div className={`absolute top-8 -right-4 transition-all duration-500 ${isHovered ? 'transform translate-x-2 -translate-y-2' : ''}`}>
+                  <div className={`absolute top-8 right-4 transition-all duration-500 ${isHovered ? 'transform translate-x-2 -translate-y-2' : ''}`}>
                     <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
                       <div className="flex items-center space-x-3">
                         <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
@@ -84,7 +84,7 @@ const HeroSection = () => {
                     </div>
                   </div>
 
-                  <div className={`absolute bottom-8 -left-4 transition-all duration-500 ${isHovered ? 'transform -translate-x-2 translate-y-2' : ''}`}>
+                  <div className={`absolute bottom-8 left-4 transition-all duration-500 ${isHovered ? 'transform -translate-x-2 translate-y-2' : ''}`}>
                     <div className="bg-domous-gradient text-white rounded-2xl p-4 shadow-lg">
                       <div className="text-sm font-medium">+47% conversões</div>
                       <div className="text-xs opacity-80">este mês</div>
