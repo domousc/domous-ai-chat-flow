@@ -18,7 +18,8 @@ const plans = [
     ],
     cta: "Começar com o Essencial",
     link: "https://pay.hotmart.com/K102155992V?off=53rfm1yf",
-    icon: MessageCircle
+    icon: MessageCircle,
+    id: "bt1"
   },
   {
     name: "Profissional",
@@ -38,7 +39,8 @@ const plans = [
     cta: "Quero o Profissional",
     link: "https://pay.hotmart.com/K102155992V?off=lx81guor",
     bonus: "Por apenas R$ 100 a mais que o Essencial, você triplica usuários e conexões",
-    icon: Crown
+    icon: Crown,
+    id: "bt2"
   },
   {
     name: "Avançado",
@@ -59,7 +61,8 @@ const plans = [
     cta: "Quero o Avançado",
     link: "https://pay.hotmart.com/K102155992V?off=uykcul5k",
     bonus: "Por menos que metade do custo de um atendente júnior, você tem CRM completo + assessoria",
-    icon: Sparkles
+    icon: Sparkles,
+    id: "bt3"
   },
   {
     name: "Enterprise",
@@ -79,7 +82,8 @@ const plans = [
     ],
     cta: "Solicitar Enterprise",
     link: "https://wa.me/5583981195186?text=Olá! Gostaria de conhecer o plano Enterprise do Domous CRM.",
-    icon: Users
+    icon: Users,
+    id: "bt4"
   }
 ];
 
@@ -182,7 +186,7 @@ const PricingSection = () => {
                   </div>
                 )}
 
-                <Button
+                <Button id={plan.id}
                   asChild
                   className={`w-full font-semibold py-6 text-base group ${
                     plan.popular
