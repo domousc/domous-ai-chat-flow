@@ -37,7 +37,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-domous-dark mb-6">
             Transforme seu negócio com <span className="text-domous-gradient">resultados reais</span>
           </h2>
@@ -46,26 +46,27 @@ const BenefitsSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
               <div
                 key={index}
-                className="card-domous group hover:shadow-xl"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="flex items-start space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors"
               >
-                <div className="w-16 h-16 mb-6 bg-gradient-domous rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <IconComponent className="h-8 w-8 text-white" />
+                <div className="w-12 h-12 bg-gradient-domous rounded-xl flex items-center justify-center flex-shrink-0">
+                  <IconComponent className="h-6 w-6 text-white" />
                 </div>
                 
-                <h3 className="text-2xl font-semibold text-domous-dark mb-4">
-                  {benefit.title}
-                </h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {benefit.description}
-                </p>
+                <div>
+                  <h3 className="text-lg font-semibold text-domous-dark mb-1">
+                    {benefit.title}
+                  </h3>
+                  
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
               </div>
             );
           })}
