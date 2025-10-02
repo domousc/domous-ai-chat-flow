@@ -33,7 +33,7 @@ const features = [
   },
   {
     feature: "Preço Mensal",
-    domous: "A partir de R$ 197",
+    domous: "A partir de R$ 129",
     competitor1: "R$ 500-800",
     competitor2: "R$ 600-900"
   },

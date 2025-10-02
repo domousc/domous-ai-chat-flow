@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const plans = [
   {
     name: "Essencial",
-    price: "197",
+    price: "129",
     originalPrice: null,
     description: "Ideal para quem está começando a organizar o atendimento",
     popular: false,
@@ -23,7 +23,7 @@ const plans = [
   },
   {
     name: "Profissional",
-    price: "297",
+    price: "159",
     originalPrice: null,
     description: "Perfeito para empresas que querem escalar",
     popular: true,
@@ -38,13 +38,13 @@ const plans = [
     ],
     cta: "Quero o Profissional",
     link: "https://pay.hotmart.com/K102155992V?off=lx81guor",
-    bonus: "Por apenas R$ 100 a mais que o Essencial, você triplica usuários e conexões",
+    bonus: "Por apenas R$ 30 a mais que o Essencial, você triplica usuários e conexões",
     icon: Crown,
     id: "bt2"
   },
   {
     name: "Avançado",
-    price: "369",
+    price: "199",
     originalPrice: null,
     description: "Para equipes comerciais que precisam de performance máxima",
     popular: false,
@@ -100,7 +100,7 @@ const PricingSection = () => {
           
           <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-domous-dark mb-6">
             Outros CRMs com IA custam de <span className="text-red-500">R$ 500 a R$ 800/mês</span>.<br />
-            Na Domous você tem <span className="text-domous-gradient">tudo isso</span> — a partir de R$ 197/mês.
+            Na Domous você tem <span className="text-domous-gradient">tudo isso</span> — a partir de R$ 129/mês.
           </h2>
           
           <p className="text-xl lg:text-2xl text-muted-foreground mb-8">
