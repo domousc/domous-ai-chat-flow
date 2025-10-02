@@ -14,118 +14,114 @@ const PaymentSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* PIX */}
-            <div className="card-domous group hover:shadow-xl">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Smartphone className="h-10 w-10 text-white" />
-                </div>
-                
-                <h3 className="text-2xl font-bold text-domous-dark mb-4">
-                  PIX
-                </h3>
-                
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pagamento instantâneo e seguro. Ativação imediata da sua conta após confirmação do pagamento.
-                </p>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-green-600">
-                    <Check className="h-4 w-4 mr-3" />
-                    <span className="text-sm">Ativação instantânea</span>
-                  </div>
-                  <div className="flex items-center text-green-600">
-                    <Check className="h-4 w-4 mr-3" />
-                    <span className="text-sm">Taxa zero</span>
-                  </div>
-                  <div className="flex items-center text-green-600">
-                    <Check className="h-4 w-4 mr-3" />
-                    <span className="text-sm">Disponível 24/7</span>
-                  </div>
-                </div>
-
-                <div className="bg-green-50 p-4 rounded-xl">
-                  <p className="text-green-700 font-semibold text-sm">
-                    🎉 Primeira escolha dos nossos clientes
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Cartão de Crédito */}
-            <div className="card-domous group hover:shadow-xl">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <CreditCard className="h-10 w-10 text-white" />
-                </div>
-                
-                <h3 className="text-2xl font-bold text-domous-dark mb-4">
-                  Cartão de Crédito
-                </h3>
-                
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pagamento recorrente automático. Sem preocupação com renovações mensais.
-                </p>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-blue-600">
-                    <Check className="h-4 w-4 mr-3" />
-                    <span className="text-sm">Cobrança automática</span>
-                  </div>
-                  <div className="flex items-center text-blue-600">
-                    <Check className="h-4 w-4 mr-3" />
-                    <span className="text-sm">Todas as bandeiras</span>
-                  </div>
-                  <div className="flex items-center text-blue-600">
-                    <Check className="h-4 w-4 mr-3" />
-                    <span className="text-sm">Cancelamento fácil</span>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50 p-4 rounded-xl">
-                  <p className="text-blue-700 font-semibold text-sm">
-                    💳 Visa, Master, Elo, Amex, Hiper
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Security Notice */}
-          <div className="mt-12">
-            <div className="bg-white rounded-3xl p-8 shadow-card-domous">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-600 to-gray-700 rounded-2xl flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-white" />
-                </div>
-              </div>
-              
-              <h3 className="text-2xl font-bold text-center text-domous-dark mb-4">
-                Pagamentos 100% Seguros
+          {/* Single consolidated payment card */}
+          <div className="bg-white rounded-3xl p-8 shadow-card-domous">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-domous-dark mb-3">
+                Pagamento Flexível e Seguro
               </h3>
+              <p className="text-muted-foreground">
+                Escolha a forma de pagamento mais conveniente para você
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              {/* PIX */}
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Smartphone className="h-7 w-7 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-domous-dark mb-2">PIX</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Pagamento instantâneo e seguro. Ativação imediata da sua conta.
+                  </p>
+                  <div className="space-y-1.5">
+                    <div className="flex items-center text-green-600 text-xs">
+                      <Check className="h-3 w-3 mr-2" />
+                      <span>Ativação instantânea</span>
+                    </div>
+                    <div className="flex items-center text-green-600 text-xs">
+                      <Check className="h-3 w-3 mr-2" />
+                      <span>Taxa zero</span>
+                    </div>
+                    <div className="flex items-center text-green-600 text-xs">
+                      <Check className="h-3 w-3 mr-2" />
+                      <span>Disponível 24/7</span>
+                    </div>
+                  </div>
+                  <div className="mt-3 bg-green-50 p-2 rounded-lg">
+                    <p className="text-green-700 font-semibold text-xs">
+                      🎉 Primeira escolha dos clientes
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cartão de Crédito */}
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <CreditCard className="h-7 w-7 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-domous-dark mb-2">Cartão de Crédito</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Pagamento recorrente automático. Sem preocupação com renovações.
+                  </p>
+                  <div className="space-y-1.5">
+                    <div className="flex items-center text-blue-600 text-xs">
+                      <Check className="h-3 w-3 mr-2" />
+                      <span>Cobrança automática</span>
+                    </div>
+                    <div className="flex items-center text-blue-600 text-xs">
+                      <Check className="h-3 w-3 mr-2" />
+                      <span>Todas as bandeiras</span>
+                    </div>
+                    <div className="flex items-center text-blue-600 text-xs">
+                      <Check className="h-3 w-3 mr-2" />
+                      <span>Cancelamento fácil</span>
+                    </div>
+                  </div>
+                  <div className="mt-3 bg-blue-50 p-2 rounded-lg">
+                    <p className="text-blue-700 font-semibold text-xs">
+                      💳 Visa, Master, Elo, Amex, Hiper
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Security info */}
+            <div className="border-t border-gray-200 pt-6">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="text-lg font-bold text-domous-dark ml-3">
+                  Pagamentos 100% Seguros
+                </h4>
+              </div>
               
-              <p className="text-center text-muted-foreground mb-6">
-                Utilizamos criptografia de ponta e parceiros certificados para garantir a segurança total das suas transações.
+              <p className="text-center text-sm text-muted-foreground mb-4">
+                Criptografia de ponta e parceiros certificados para garantir a segurança total.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="flex flex-wrap justify-center gap-6">
                 <div className="text-center">
-                  <div className="text-sm text-muted-foreground mb-2">Processamento</div>
-                  <div className="font-semibold text-domous-dark">Asaas</div>
+                  <div className="text-xs text-muted-foreground mb-1">Processamento</div>
+                  <div className="text-sm font-semibold text-domous-dark">Asaas</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm text-muted-foreground mb-2">Certificação</div>
-                  <div className="font-semibold text-domous-dark">SSL 256-bits</div>
+                  <div className="text-xs text-muted-foreground mb-1">Certificação</div>
+                  <div className="text-sm font-semibold text-domous-dark">SSL 256-bits</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm text-muted-foreground mb-2">Compliance</div>
-                  <div className="font-semibold text-domous-dark">PCI DSS Level 1</div>
+                  <div className="text-xs text-muted-foreground mb-1">Compliance</div>
+                  <div className="text-sm font-semibold text-domous-dark">PCI DSS Level 1</div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
