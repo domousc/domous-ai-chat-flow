@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const plans = [
   {
     name: "Essencial",
-    price: "129",
+    price: "97",
     originalPrice: null,
     description: "Ideal para quem está começando a organizar o atendimento",
     popular: false,
@@ -19,7 +19,8 @@ const plans = [
     cta: "Começar com o Essencial",
     link: "https://pay.hotmart.com/K102155992V?off=53rfm1yf",
     icon: MessageCircle,
-    id: "bt1"
+    id: "bt1",
+    hideFirstMonthPrice: true
   },
   {
     name: "Profissional",
@@ -100,7 +101,7 @@ const PricingSection = () => {
           
           <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-domous-dark mb-6">
             <span className="text-lg lg:text-xl xl:text-2xl">Outros CRMs com IA custam de <span className="text-red-500">R$ 500 a R$ 800/mês</span>.</span><br />
-            Na Domous você tem <span className="text-domous-gradient">tudo isso</span> — a partir de R$ 129/mês.
+            Na Domous você tem <span className="text-domous-gradient">tudo isso</span> — a partir de R$ 97/mês.
           </h2>
           
           <p className="text-xl lg:text-2xl text-muted-foreground mb-8">
@@ -151,9 +152,11 @@ const PricingSection = () => {
                           R$ {plan.price}
                           <span className="text-lg font-normal">/mês</span>
                         </div>
-                        <div className={`text-sm ${plan.popular ? "text-white/80" : "text-muted-foreground"}`}>
-                          Primeiro mês: R$ 97
-                        </div>
+                        {!plan.hideFirstMonthPrice && (
+                          <div className={`text-sm ${plan.popular ? "text-white/80" : "text-muted-foreground"}`}>
+                            Primeiro mês: R$ 97
+                          </div>
+                        )}
                       </>
                     )}
                   </div>

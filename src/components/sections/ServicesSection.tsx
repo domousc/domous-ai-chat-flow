@@ -5,26 +5,22 @@ const services = [
   {
     icon: TrendingUp,
     title: "Assessoria de Marketing + Tráfego Pago",
-    description: "Transformamos negócios em marcas fortes na sua região com estratégias de tráfego pago e campanhas que trazem clientes todos os dias.",
-    highlights: ["Campanhas Google Ads", "Facebook e Instagram Ads", "Estratégia de marca regional", "ROI garantido"]
+    description: "Transformamos negócios em marcas fortes na sua região com estratégias de tráfego pago e campanhas que trazem clientes todos os dias."
   },
   {
     icon: ShoppingCart,
     title: "Assessoria de E-commerce",
-    description: "Gestão estratégica de anúncios e otimização da loja virtual, sempre com foco em aumentar faturamento e ROI.",
-    highlights: ["Otimização de conversões", "Gestão de marketplace", "Automação de vendas", "Analytics avançado"]
+    description: "Gestão estratégica de anúncios e otimização da loja virtual, sempre com foco em aumentar faturamento e ROI."
   },
   {
     icon: Store,
     title: "Implantação de Lojas Virtuais",
-    description: "Criação de lojas completas e integradas em plataformas como Tray, prontas para vender em múltiplos canais.",
-    highlights: ["Desenvolvimento completo", "Integração com CRM", "Design responsivo", "Treinamento incluso"]
+    description: "Criação de lojas completas e integradas em plataformas como Tray, prontas para vender em múltiplos canais."
   },
   {
     icon: Target,
     title: "Consultoria de Crescimento",
-    description: "Mapeamos gargalos, desenhamos planos personalizados e criamos estratégias para escalar de forma sustentável.",
-    highlights: ["Diagnóstico empresarial", "Plano de crescimento", "Metas e KPIs", "Acompanhamento mensal"]
+    description: "Mapeamos gargalos, desenhamos planos personalizados e criamos estratégias para escalar de forma sustentável."
   }
 ];
 
@@ -68,18 +64,9 @@ const ServicesSection = () => {
                       {service.title}
                     </h3>
                     
-                    <p className="text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-muted-foreground leading-relaxed">
                       {service.description}
                     </p>
-
-                    <div className="grid grid-cols-2 gap-2">
-                      {service.highlights.map((highlight, i) => (
-                        <div key={i} className="flex items-center text-sm">
-                          <div className="w-1.5 h-1.5 bg-domous-accent-1 rounded-full mr-2 flex-shrink-0" />
-                          <span className="text-muted-foreground">{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>
