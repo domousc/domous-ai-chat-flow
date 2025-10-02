@@ -1,4 +1,4 @@
-import { Bot, MessageSquare, Kanban, Zap, FileText, Users2 } from "lucide-react";
+import { Bot, MessageSquare, Columns, Zap, FileText, Users2 } from "lucide-react";
 
 const features = [
   {
@@ -17,7 +17,7 @@ const features = [
     description: "Envie mensagens segmentadas e campanhas em massa com facilidade"
   },
   {
-    icon: Kanban,
+    icon: Columns,
     title: "Funil visual Kanban para acompanhar vendas",
     description: "Visualize o andamento de cada negociação em tempo real"
   },
