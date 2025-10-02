@@ -1,4 +1,4 @@
-import { Bot, MessageSquare, Kanban, Zap, FileText, Users2, HeadphonesIcon } from "lucide-react";
+import { Bot, MessageSquare, Kanban, Zap, FileText, Users2 } from "lucide-react";
 
 const features = [
   {
@@ -30,11 +30,6 @@ const features = [
     icon: Users2,
     title: "Multiusuário e filas",
     description: "Distribua atendimentos automaticamente entre sua equipe"
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Suporte em português",
-    description: "Suporte brasileiro que entende suas necessidades específicas"
   }
 ];
 
