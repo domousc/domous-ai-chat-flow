@@ -130,9 +130,14 @@ const ServicesSection = () => {
               
               <span className="text-white/80 text-sm">ou</span>
               
-              <button className="text-white font-semibold underline hover:no-underline">
+              <a 
+                href="https://wa.me/5583981195186?text=Olá,%20vi%20o%20site%20do%20CRM%20e%20gostaria%20de%20entender%20mais%20sobre%20os%20serviços%20da%20Domous"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold underline hover:no-underline"
+              >
                 Agende uma conversa estratégica
-              </button>
+              </a>
             </div>
           </div>
         </div>
