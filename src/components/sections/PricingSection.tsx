@@ -99,7 +99,7 @@ const PricingSection = () => {
           </div>
           
           <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-domous-dark mb-6">
-            Outros CRMs com IA custam de <span className="text-red-500">R$ 500 a R$ 800/mês</span>.<br />
+            <span className="text-lg lg:text-xl xl:text-2xl">Outros CRMs com IA custam de <span className="text-red-500">R$ 500 a R$ 800/mês</span>.</span><br />
             Na Domous você tem <span className="text-domous-gradient">tudo isso</span> — a partir de R$ 129/mês.
           </h2>
           
