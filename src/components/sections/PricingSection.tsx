@@ -107,6 +107,12 @@ const PricingSection = () => {
           <p className="text-xl lg:text-2xl text-muted-foreground mb-8">
             E para novos clientes, o <strong className="text-domous-accent-1">primeiro mês sai por apenas R$ 97</strong>, conta ativa em minutos.
           </p>
+          
+          <div className="bg-domous-accent-1/10 border border-domous-accent-1/30 rounded-2xl p-4 max-w-3xl mx-auto">
+            <p className="text-sm text-domous-dark">
+              <strong>💡 Importante:</strong> Para os planos <strong>Profissional</strong> e <strong>Avançado</strong>, use o cupom <strong className="text-domous-accent-1">DOMOUSCRM</strong> para garantir seu primeiro mês por R$ 97
+            </p>
+          </div>
         </div>
 
         {/* Plans Grid */}
@@ -154,7 +160,7 @@ const PricingSection = () => {
                         </div>
                         {!plan.hideFirstMonthPrice && (
                           <div className={`text-sm ${plan.popular ? "text-white/80" : "text-muted-foreground"}`}>
-                            Primeiro mês: R$ 97
+                            Primeiro mês: R$ 97*
                           </div>
                         )}
                       </>
